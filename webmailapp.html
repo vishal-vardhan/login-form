@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Webmail</title>
+  /* css code start*/
+<style>
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+
+
+
+.wrapper {
+  background: #50a3a2;
+  background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#53e3a6));
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  margin-top: -200px;
+  overflow: hidden;
+}
+.wrapper.form-success .container h1 {
+  -webkit-transform: translateY(85px);
+          transform: translateY(85px);
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 0;
+  height: 400px;
+  text-align: center;
+}
+.container h1 {
+  font-size: 40px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-put;
+          transition-timing-function: ease-in-put;
+  font-weight: 200;
+}
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 13px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+/*****************/
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input:focus {
+  background-color: white;
+  width: 300px;
+  color: #53e3a6;
+  /*********************/
+}
+form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;             /*outline shown around the login box if clicked*/
+  background-color: white;        /*backround colour for login box*/
+  border: 0;              /*border for login box*/
+  padding: 10px 15px;         /*height and width of login box*/       
+  color: #53e3a6;
+  border-radius: 13px;          /*changes radius of vertex of border*/
+  width: 250px;
+  cursor: pointer;            /*changing the cursor icon when hovered over it*/
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+form button:hover {
+  background-color: #f5f7f9;
+}
+.dropdown{
+   outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 125px;
+  border-radius: 4px;
+  padding: 3px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;;
+}
+
+
+option{
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100px;
+  padding: 10px 5px;
+  margin: 0 auto 10px auto;
+  text-align: relative;
+  font-size: 18px;
+  color:  #53e3a6;
+}
+#login{text-decoration: none;
+        color:#53e3a6; }
+</style>
+/* css code end*/
+
+
+</head>
+/*html code start*/
+<body>
+
+  <div class="wrapper">
+	<div class="container">
+		<h1>Webmail</h1>
+		
+		<form class="form">
+			<input type="text" placeholder="Username">
+			<input type="password" placeholder="Password">
+
+      <select name="loginServer" class="dropdown">
+          <option value="Teesta">Teesta</option>
+          <option value="Naambor">Naambor</option>
+          <option value="Disang" selected>Disang</option>
+          <option value="Tamdil">Tamdil</option>
+          <option value="Dikrong">Dikrong</option>
+       </select>
+
+			<button type="submit"><a href="https://webmail.iitg.ernet.in/src/login.php?secure_login=yes" id="login">Login</a></button>
+      
+		</form>
+	</div>
+</div>
+</body>
+/*html code end*/
+
+</html>
